@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    {% load static %}
+    <link href="{% static 'css/registerstyle.css' %}" rel="stylesheet" media="all"/>
+    <style>
+    body:before {
+	content: '';
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-image: url(download.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	filter: blur(10px);
+    }
+    </style>
+</head>
+<body>
+    <div class="contact-form" style="background-color:black;">
+
+    <img alt="" class="avatar" src="{% static 'img/1.png' %}">
+    <h1>Register</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        <p>Username</p>
+        <input type="text" name="username" placeholder="Username" {{form.username}} </input> <br>
+        <p>Email</p>
+        <input type="email" name="Email" placeholder="Email" {{form.email}} </input> <br>
+        <p>Password</p>
+        <input type="password" name="password1" placeholder="Password" {{form.password1}} </input> <br>
+        <p>Confirm Password</p>
+        <input type="password" name="password2" placeholder="Password" {{form.password2}} </input> <br>
+
+        {% if form.errors %}
+        {% for field in form %}
+            {% for error in field.errors %}
+                {{ error|escape }}
+            {% endfor %}
+        {% endfor %}
+        {% for error in form.non_field_errors %}
+            {{ error|escape }}
+        {% endfor %}
+        {% endif %} 
+        <input type="submit" value="Register">
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<style>
+.bgimg {
+  height: 76.5vh;
+  width:87.9vw;
+  background-position: center center;
+  background-repeat: repeat;
+}
+</style>
+<head>
+    
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Corona Virus</title>
+	{% load static %}
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />    
+	<link href="{% static 'css/templatemo-style.css' %}" rel="stylesheet" type='text/css' media="all"/>
+</head>
+
+<body> 
+
+	<div class="container">
+	<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll"> 
+            <img src="{% static 'img/download.png' %}" class="bgimg">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img src="{% static 'img/simple-house-logo.png' %}" alt="Logo" class="tm-site-logo" /> 
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">CORONA VIRUS</h1>
+								<h6 class="tm-site-description">Forgot TO Wear A MAsk?</h6>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">FORGOT TO WEAR A MASK??</h2>
+				<p class="col-12 text-center">WE ARE IN THIS TOGETHER- </br> AND WE WILL GET THROUGH THIS, TOGETHER</p>
+			</header>
+			
+			<div class="tm-paging-links">
+				<nav>
+					<ul>
+						<li class="tm-paging-item"><a href="{% url 'social' %}" class="tm-paging-link ">Social-Distancing</a></li>
+						<li class="tm-paging-item"><a href="{% url 'mask' %}" class="tm-paging-link">Mask</a></li>
+						<li class="tm-paging-item"><a href="{% url 'sanitizer' %}" class="tm-paging-link active">Sanitize</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- Gallery -->
+			<div class="row tm-gallery">				
+				<!-- Sanitize -->
+				<div id="tm-gallery-page-sanitize" class="tm-gallery-page">
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="{% static 'img/gallery/s1.png' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Sanitize Yourself</h4>
+								<p class="tm-gallery-description">Sanitize your hands on entering any place. Don't let germs spread.</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="{% static 'img/gallery/s2.png' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption><br>
+								<h4 class="tm-gallery-title">Bye Bye Germs!</h4>
+								<p class="tm-gallery-description">Your hands can be dangerous. Wash them with soap and water to keep bacteria at bay.</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="{% static 'img/gallery/s3.png' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Wash Wash Wash!!!</h4>
+								<p class="tm-gallery-description">Hands that look clean can still have icky germs. Remember Wet-Get Soap-Scrub-Rinse-Dry</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="{% static 'img/gallery/s4.png' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Clean Hands Saves Lives!</h4>
+								<p class="tm-gallery-description">It is best to wash your hands with soap and warm water for 20 seconds.</p>
+							</figcaption>
+						</figure>
+					</article>
+					<div class="col-md-6">
+						<figure class="tm-description-figure">
+							<embed style="width: 1100px; height:350px;" src="https://www.youtube.com/embed/seA1wbXUQTs"> </embed>
+						</figure>
+					</div>
+					<article class="tm-gallery-data">
+						<figure>
+							<figcaption><br><br>
+								<h4 class="tm-gallery-data-title">KEEP YOUR HANDS SAFE</h4>
+  								<p class="tm-gallery-data">When shopping for hand sanitizer, make sure you choose a sanitizer that contains between 60-95% alcohol. Also, when you use hand sanitizer, make sure you do so the right way. Find the directions on the back of the bottle and follow the proper technique. Generally, apply the liquid to the palm of one hand. Then rub it all over both hands until the sanitizer dries. This takes about 20 seconds. Be careful not to wipe the sanitizer off before it’s dry. Doing that can make it not as effective in killing germs.</p>
+									<b>Remember to the keys: WET - GET SOAP - SCRUB - RINSE - DRY.</b></p>
+							</figcaption>
+						</figure>
+					</article>
+				</div> 
+				<!-- sanitizer -->
+			</div>
+				<!-- End of gallary -->
+
+			<!-- Link Section -->
+			<div class="tm-section tm-container-inner">
+				<div class="row">
+					<div class="col-md-6">
+						<figure class="tm-description-figure">
+							<embed style="width: 580px; height:450px;" src="https://www.youtube.com/embed/5C88zWXm3Oc"> </embed>
+						</figure>
+					</div>
+					<div class="tm-description-box">
+						<p style="color: black; text-align: center; padding-top: 5rem;">"THOUGHT OF THE DAY"<br>
+						Safety from 'CORONA' is hidden in 'CORONA' word itself<br>
+						<b>C</b>- Clean Your Hands<br>
+						<b>O</b>- Off From Gatherings<br>
+						<b>R</b>- Raise Your Immunity<br>
+						<b>O</b>- Only stick To Wear Mask<br>
+						<b>N</b>- No To Handshake<br>
+						<b>A</b>- Avoid Rumours<br>
+						Stay Alert, Stay Healthy...</p>
+					</div>
+					<div class="col-md-6">
+							<figure class="tm-description-figure">
+							<br><br>
+							<embed style="width: 580px; height:450px;" src="https://www.youtube.com/embed/-UJ_LBVS8qU"> </embed>
+						</figure>
+					</div>
+					<div class="tm-description-box">
+							<p style="color: black; padding-top: 12rem; text-align: center;">
+							It is not the strongest oh the species survive,<br>
+							nor the most intelligent that survive.<br>
+						   	It is the one that is the most adaptable to change.<br>.
+							So be adaptable and get your vaccination soon.<br>
+							For more visit: <a href="https://www.cowin.gov.in/" target="_blanck">CoWin</a></p>.
+					</div>
+					
+				</div>
+			</div>
+			<!-- Button -->
+			<div>
+				<br><br>
+				<input type="checkbox" class="check"> 
+				<label>I hereby declare that, I will never violate any COVID-19 guidelines from now.</label>
+				<br><br><br>
+				<a href="#" class="btn">Proceed Payment</a>
+			</div>
+		</main>
+
+		<footer class="tm-footer text-center">
+			<p>Copyright &copy; FACEMASK DETECTION SYSTEM 2021 </p>
+		</footer>
+	</div>
+	<script src="static/js/jquery.min.js"></script>
+	<script src="static/js/parallax.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Handle click on paging links
+			$('.tm-paging-link').click(function(e){
+				e.preventDefault();
+				
+				var page = $(this).text().toLowerCase();
+				$('.tm-gallery-page').addClass('hidden');
+				$('#tm-gallery-page-' + page).removeClass('hidden');
+				$('.tm-paging-link').removeClass('active');
+				$(this).addClass("active");
+			});
+		});
+	</script>
+</body>
+</html>
