@@ -12,4 +12,5 @@ urlpatterns = [
     path('sanitizer/', views.sanitizer, name = 'sanitizer'),
     path('mask/', views.mask, name = 'mask'),
     path('payment/', views.payment, name = 'payment'),
+    path('end/', views.end, name = 'end'),
 ]

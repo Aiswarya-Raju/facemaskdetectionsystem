@@ -55,6 +55,9 @@ def mask(request):
 def payment(request):
     return render(request, 'accounts/payment.html', {})
 
+def end(request):
+    return render(request, 'accounts/end.html', {})
+
 def logoutUser(request):
     logout(request)
     return redirect('index')

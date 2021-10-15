@@ -32,14 +32,14 @@
     <h1>Register</h1>
     <form action="" method="post">
         {% csrf_token %}
-        <p>Username</p>
-        <input type="text" name="username" placeholder="Username" {{form.username}} </input> <br>
-        <p>Email</p>
-        <input type="email" name="Email" placeholder="Email" {{form.email}} </input> <br>
-        <p>Password</p>
-        <input type="password" name="password1" placeholder="Password" {{form.password1}} </input> <br>
-        <p>Confirm Password</p>
-        <input type="password" name="password2" placeholder="Password" {{form.password2}} </input> <br>
+       <label for="username">Username</label><br>
+        <input placeholder="username" {{form.username}}</input> <br><br>
+        <label for="email">Email</label><br>
+        <input placeholder="Email" {{form.email}}</input><br><br> 
+        <label for="password1">Password</label><br>
+        <input placeholder="password" {{form.password1}}</input> <br><br>
+        <label for="password2">Confirm Password</label><br>
+        <input placeholder="password" {{form.password2}}</input> <br><br>
 
         {% if form.errors %}
         {% for field in form %}
