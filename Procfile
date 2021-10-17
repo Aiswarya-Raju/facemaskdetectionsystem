@@ -1,1 +1,1 @@
-web: gunicorn accounts.wsgi --log-file -
+web: gunicorn accountsregister_login.wsgi --log-file -
