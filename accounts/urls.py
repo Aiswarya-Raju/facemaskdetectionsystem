@@ -1,6 +1,10 @@
 from django.urls import path
 
 from . import views
+from django.conf import settings
+
+from django.views.static import serve
+from django.conf.urls import url
 
 urlpatterns = [
     path('', views.index, name = 'index'),
@@ -13,4 +17,6 @@ urlpatterns = [
     path('mask/', views.mask, name = 'mask'),
     path('payment/', views.payment, name = 'payment'),
     path('end/', views.end, name = 'end'),
+     path(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
+    path(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT})
 ]
